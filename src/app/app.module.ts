@@ -8,6 +8,8 @@ import { EXHOMEComponent } from './component/ex-home/ex-home.component';
 import { EXEXPORTPDFComponent } from './component/ex-exportpdf/ex-exportpdf.component';
 import { EXEXPORTEXCELComponent } from './component/ex-exportexcel/ex-exportexcel.component';
 import { ExLoginComponent } from './component/ex-login/ex-login.component';
+import { EXSubMenuComponent } from './component/ex-sub-menu/ex-sub-menu.component';
+import { MainComponent } from './component/main/main.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ExLoginComponent } from './component/ex-login/ex-login.component';
     EXHOMEComponent,
     EXEXPORTPDFComponent,
     EXEXPORTEXCELComponent,
-    ExLoginComponent
+    ExLoginComponent,
+    EXSubMenuComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
