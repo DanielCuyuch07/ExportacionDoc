@@ -1,15 +1,62 @@
-<div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header text-white">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-      <i class="bi bi-columns-gap fs-6"></i> Synapse
+<div class="fixed-menu bg-dark" style="width: 250px;">
+  <div class="text-white">
+    <h5 class="text-center mt-3">
+      <i class="bi bi-columns-gap fs-6"></i>
+      <span class="ms-3">Synapse</span> 
     </h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
-    <ul class="list-unstyled">
-      <li><a href="#vista1">Vista 1</a></li>
-      <li><a href="#vista2">Vista 2</a></li>
-      <li><a href="#vista3">Vista 3</a></li>
+  <div class="mt-5" style="max-height: calc(100vh - 70px); overflow-y: auto;">
+    <ul class="list-unstyled ms-3">
+      <!-- Contenido del menú -->
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center"
+           [routerLink]="['/ViewComponentUsuario']">
+          <i class="bi bi-people-fill fs-5 me-2"></i>
+          <span class="fs-6">Usuarios</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center mt-3"
+           [routerLink]="['/ViewComponentGrado']">
+          <i class="bi bi-diagram-3-fill fs-5 me-2"></i>
+          <span class="fs-6">Grados</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center mt-3"
+           [routerLink]="['/ViewComponentDepartamento']">
+           <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+           <span class="fs-6">Departamentos</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center mt-3"
+           [routerLink]="['/ViewComponentHorarios']">
+           <i class="bi bi-alarm fs-5 me-2"></i>
+           <span class="fs-6">Horarios</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center mt-3"
+           [routerLink]="['/ViewComponentUniformes']">
+          <i class="bi bi-reception-3 fs-5 me-2"></i>
+          <span class="fs-6">Uniformes</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center mt-3"
+           [routerLink]="['/ViewComponentProfesores']">
+           <i class="bi bi-person-lines-fill fs-5 me-2"></i>
+           <span class="fs-6">Profesores</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-link text-white text-decoration-none d-flex align-items-center mt-3"
+           [routerLink]="['/ViewComponentEmpleados']">
+          <i class="bi bi-person-fill-add fs-5 me-2"></i>
+          <span class="fs-6">Empleados</span>
+        </a>
+      </li>
     </ul>
   </div>
 </div>

@@ -14,4 +14,10 @@ export class EXSubMenuComponent {
     const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
     offcanvas.show();
   }
+
+  isOffcanvasOpen = false;
+
+  toggleOffcanvas() {
+    this.isOffcanvasOpen = !this.isOffcanvasOpen;
+  }
 }

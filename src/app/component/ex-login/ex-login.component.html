@@ -1,1 +1,36 @@
-<p>ex-login works!</p>
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <!-- Tu contenido aquí si es necesario -->
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-md-6 col-lg-4 mt-3">
+                <div class="login-wrap p-0">
+                    <h3 class="mb-4 text-center">Iniciar Sesion</h3>
+                    <form [formGroup]="formulario" (ngSubmit)="submitForm()">
+                        <div class="form-group">
+                          <label for="usuario" class="font-weight-bold">Usuario</label>
+                          <input type="text" id="usuario" class="form-control mt-2" placeholder="Ingrese su usuario" formControlName="usuario">
+                          <!-- Mostrar un mensaje de error si el campo es inválido -->
+                          <!-- <div *ngIf="formulario.get('usuario').invalid && formulario.get('usuario').touched" class="text-danger">
+                            El usuario debe contener solo letras minúsculas y números.
+                          </div> -->
+                        </div>
+                        <!-- Otros campos de tu formulario -->
+                      
+                        <div class="form-group mt-5">
+                          <button type="submit" class="form-control btn btn-primary submit px-3">Iniciar Sesión</button>
+                        </div>
+                      </form>
+                      
+                    <div class="social d-flex justify-content-center ">
+                        <a href="#" class="px-2 py-2 mr-md-1 rounded text-decoration-none"><span class="ion-logo-facebook mr-2 "></span>
+                            Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
