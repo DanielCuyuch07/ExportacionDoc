@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EXREGISTERComponent } from './component/ex-register/ex-register.component';
@@ -20,6 +21,7 @@ import { ExHorariosComponent } from './component/ex-horarios/ex-horarios.compone
 import { ExUniformesComponent } from './component/ex-uniformes/ex-uniformes.component';
 import { ExProfesoresComponent } from './component/ex-profesores/ex-profesores.component';
 import { ExEmpleadosComponent } from './component/ex-empleados/ex-empleados.component';
+
 
 @NgModule({
   declarations: [

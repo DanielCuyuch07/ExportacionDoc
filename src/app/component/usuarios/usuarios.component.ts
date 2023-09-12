@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// import { NgbTooltip } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-usuarios',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent {
+  // @ViewChild('botonCerrar') botonCerrar: NgbTooltip;
 
+  // ngAfterViewInit() {
+  //     this.botonCerrar.open();
+  // }
+  
 }
