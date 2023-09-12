@@ -12,11 +12,16 @@ import { ExProfesoresComponent } from './component/ex-profesores/ex-profesores.c
 import { ExUniformesComponent } from './component/ex-uniformes/ex-uniformes.component';
 import { ExLoginComponent } from './component/ex-login/ex-login.component';
 import { EXREGISTERComponent } from './component/ex-register/ex-register.component';
+import { MainComponent } from './component/main/main.component';
+import { EXHOMEComponent } from './component/ex-home/ex-home.component';
 
 const routes: Routes = [
 
   {
-    path: "", component: ExLoginComponent,
+    path: "", component: EXHOMEComponent,
+  },
+  {
+    path: "login", component: ExLoginComponent,
   },
   {
     path: "registerUser", component: EXREGISTERComponent,
@@ -47,6 +52,12 @@ const routes: Routes = [
   },
   {
     path: "ViewComponentEmpleados", component: ExEmpleadosComponent,
+  },
+  {
+    path: "main", component: MainComponent,
+  },
+  {
+    path: "home", component: EXHOMEComponent,
   }
 
 
