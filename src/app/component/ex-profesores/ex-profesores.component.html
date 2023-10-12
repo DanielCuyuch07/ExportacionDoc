@@ -9,12 +9,19 @@
 <!-- Botón que abre el modal -->
 <div class="container mt-4">
     <div class="text-center d-flex justify-content-end">
+        <button type="button" class="btn btn-primary ms-3" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <i class="bi bi-file-pdf"></i>
+        </button>
+        <button type="button" class="btn btn-primary ms-3" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <i class="bi bi-file-excel"></i>
+        </button>
+    </div>
+    <div class="d-flex justify-content-center ms-10">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
             <i class="bi bi-plus-lg"></i>
         </button>
     </div>
 </div>
-
 <!-- Modal -->
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
@@ -28,38 +35,38 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form [formGroup]="formProfesores">
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">
                             <i class="bi bi-circle-fill me-2 ms-1 small-icon text-success"></i>Nombre del profesor
                         </label>
-                        <input type="text" class="form-control" id="recipient-name"
+                        <input type="text" class="form-control" formControlName="nombreProfesor" id="recipient-name"
                             placeholder="Ingrese el nombre completo">
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label"><i
                                 class="bi bi-circle-fill me-2 ms-1 small-icon text-success"></i>Salario </label>
-                        <input type="email" class="form-control" id="recipient-name"
+                        <input type="number" class="form-control" formControlName="salario" id="recipient-name"
                             placeholder="Ingrese el salario">
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label"><i
                                 class="bi bi-circle-fill me-2 ms-1 small-icon text-success"></i>Grado</label>
-                        <input type="email" class="form-control" id="recipient-name"
+                        <input type="text" class="form-control" formControlName="grado" id="recipient-name"
                             placeholder="Ingrese el grado que asiste ">
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label"><i
                                 class="bi bi-circle-fill me-2 ms-1 small-icon text-success"></i>Horario de
                             entrada</label>
-                        <input type="email" class="form-control" id="recipient-name"
+                        <input type="time" class="form-control" formControlName="horarioEntrada" id="recipient-name"
                             placeholder="Ingrese el horario de entrada">
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label"><i
                                 class="bi bi-circle-fill me-2 ms-1 small-icon text-success"></i>Horario de
                             salida</label>
-                        <input type="email" class="form-control" id="recipient-name"
+                        <input type="time" class="form-control" formControlName="horarioSalida" id="recipient-name"
                             placeholder="Ingrese el horario de salida">
                     </div>
                 </form>
@@ -69,10 +76,8 @@
                     <button type="button" class="btn btn-danger" placement="top">
                         <a href=""><i class="bi bi-x-circle text-white"></i></a>
                     </button>
-
-
                 </div>
-                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                <button type="button" class="btn btn-primary" [disabled]="formProfesores.invalid" data-toggle="tooltip" data-placement="top"
                     data-original-title="Descargar"><i class="bi bi-download text-white"></i></button>
             </div>
         </div>
@@ -84,7 +89,7 @@
         <table class="table ms-5">
             <thead>
                 <tr>
-                  <th scope="col">No</th>
+                    <th scope="col">No</th>
                     <th scope="col">Nombre del profesor</th>
                     <th scope="col">Salario</th>
                     <th scope="col">Horario de entrada</th>
@@ -106,18 +111,16 @@
                     <td>
 
                     </td>
-        
+
                     <td>
                         <button class="btn btn-link" style="padding: 0;">
                             <a><i class="bi bi-trash3 fa-floppy-disk text-primary" style="padding: 0 10px;"></i></a>
                         </button>
-    
+
                         <button type="submit" class="btn btn-link" style="padding: 0;">
                             <i class="bi bi-pencil-square text-primary" style="padding: 0 10px;"></i>
                         </button>
                     </td>
-
-
                 </tr>
             </tbody>
         </table>

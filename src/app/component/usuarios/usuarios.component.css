@@ -1,3 +1,8 @@
 .small-icon {
     font-size: 10px; /* Ajusta este valor para cambiar el tamaño del icono */
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }

@@ -8,10 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent {
-  // @ViewChild('botonCerrar') botonCerrar: NgbTooltip;
 
-  // ngAfterViewInit() {
-  //     this.botonCerrar.open();
-  // }
   
 }

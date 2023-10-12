@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
+
+
+/*************** Componenetes *****************/
 import { EXREGISTERComponent } from './component/ex-register/ex-register.component';
 import { EXHOMEComponent } from './component/ex-home/ex-home.component';
 import { EXEXPORTPDFComponent } from './component/ex-exportpdf/ex-exportpdf.component';
@@ -21,6 +24,8 @@ import { ExHorariosComponent } from './component/ex-horarios/ex-horarios.compone
 import { ExUniformesComponent } from './component/ex-uniformes/ex-uniformes.component';
 import { ExProfesoresComponent } from './component/ex-profesores/ex-profesores.component';
 import { ExEmpleadosComponent } from './component/ex-empleados/ex-empleados.component';
+
+
 
 
 @NgModule({
@@ -44,7 +49,9 @@ import { ExEmpleadosComponent } from './component/ex-empleados/ex-empleados.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
