@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 
 
 /*************** Componenetes *****************/
-import { EXREGISTERComponent } from './component/ex-register/ex-register.component';
+import * as exRegisterComponent from './component/ex-register/ex-register.component';
 import { EXHOMEComponent } from './component/ex-home/ex-home.component';
 import { EXEXPORTPDFComponent } from './component/ex-exportpdf/ex-exportpdf.component';
 import { EXEXPORTEXCELComponent } from './component/ex-exportexcel/ex-exportexcel.component';
@@ -31,7 +31,7 @@ import { ExEmpleadosComponent } from './component/ex-empleados/ex-empleados.comp
 @NgModule({
   declarations: [
     AppComponent,
-    EXREGISTERComponent,
+    exRegisterComponent.EXREGISTERComponent,
     EXHOMEComponent,
     EXEXPORTPDFComponent,
     EXEXPORTEXCELComponent,
